@@ -1,0 +1,12 @@
+def is_leap_year(year):
+    return (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0)
+
+def check_leap_year(date):
+    year = int(date.split('/')[-1])
+    if is_leap_year(year):
+        print("Given year is Leap Year")
+    else:
+        print("Given year is Non Leap Year")
+
+# Example usage
+check_leap_year("04/11/1947")
