@@ -1,0 +1,16 @@
+def matrix_sums(matrix):
+    n = len(matrix)
+    row_sums = [sum(row) for row in matrix]
+    col_sums = [sum(matrix[i][j] for i in range(n)) for j in range(n)]
+    diag_sum_1 = sum(matrix[i][i] for i in range(n))
+    diag_sum_2 = sum(matrix[i][n-i-1] for i in range(n))
+    
+    for i in range(n):
+        print(f"Sum of row {i+1}: {row_sums[i]}")
+    for j in range(n):
+        print(f"Sum of column {j+1}: {col_sums[j]}")
+    print(f"Diagonal sum 1: {diag_sum_1}")
+    print(f"Diagonal sum 2: {diag_sum_2}")
+
+matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+matrix_sums(matrix)
