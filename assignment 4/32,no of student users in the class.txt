@@ -1,0 +1,9 @@
+def calculate_users(total_users, staff_users):
+    non_teaching_staff = staff_users // 3
+    student_users = total_users - staff_users - non_teaching_staff
+    print(f"Student Users: {student_users}")
+
+# Example usage
+total_users = 856
+staff_users = 126
+calculate_users(total_users, staff_users)
