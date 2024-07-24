@@ -1,0 +1,8 @@
+def count_vowels(s):
+    vowels = "aeiouAEIOU"
+    count = {v: s.count(v) for v in vowels}
+    return count
+
+# Example usage
+string = "Hello, Welcome to the World of Python!"
+print(count_vowels(string))
