@@ -1,0 +1,10 @@
+from statistics import mean, median, mode
+
+def calculate_statistics(arr):
+    print(f"Mean = {mean(arr)}")
+    print(f"Median = {median(arr)}")
+    print(f"Mode = {mode(arr)}")
+
+# Example usage
+array = [16, 18, 27, 16, 23, 21, 19]
+calculate_statistics(array)
