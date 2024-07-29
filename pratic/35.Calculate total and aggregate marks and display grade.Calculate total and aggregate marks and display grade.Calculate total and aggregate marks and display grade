@@ -1,0 +1,21 @@
+def calculate_grade(marks):
+    total = sum(marks)
+    aggregate = total / len(marks)
+    if aggregate > 75:
+        grade = "Distinction"
+    elif 60 <= aggregate < 75:
+        grade = "First Division"
+    elif 50 <= aggregate < 60:
+        grade = "Second Division"
+    elif 40 <= aggregate < 50:
+        grade = "Third Division"
+    else:
+        grade = "Fail"
+    
+    print(f"Total = {total}")
+    print(f"Aggregate = {aggregate}")
+    print(f"Grade = {grade}")
+
+# Example usage
+marks = [90, 91, 92, 93]
+calculate_grade(marks)

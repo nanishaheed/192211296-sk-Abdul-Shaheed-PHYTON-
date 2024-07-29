@@ -1,0 +1,11 @@
+def factorial(n):
+    if n == 0:
+        return 1
+    elif n < 0:
+        return "Invalid input for factorial"
+    else:
+        return n * factorial(n - 1)
+
+# Example usage
+n = 6
+print(f"The factorial of {n} is: {factorial(n)}")
